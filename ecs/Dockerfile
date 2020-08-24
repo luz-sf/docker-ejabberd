@@ -77,6 +77,8 @@ RUN apk upgrade --update musl \
     unixodbc \
     yaml \
     zlib \
+    python3 \
+    py3-requests \
     && ln -fs /usr/lib/libtdsodbc.so.0 /usr/lib/libtdsodbc.so \
     && rm -rf /var/cache/apk/*
 
